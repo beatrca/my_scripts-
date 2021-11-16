@@ -1,9 +1,10 @@
 import sys
 
 with open(sys.argv[l], "r") as fh:
-   lines = fh.readlines()
+     lines = fh.readlines()
 
 for line in lines:
-  print(len(line))
+    line = line.strip()
+    print(len(line))
 
 
